@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students List</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- /My style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center; margin-top: 50px;">Student Form</h1>
+    <div class="container">
+        <form>
+            <table border="1" style="padding: 5px; border: 2px solid black;">
+                <div class="form">
+                    <tr>
+                        <td style="font-weight: 600;" >Name</td>
+                        <td><input type="text" placeholder="Enter the Name" id="nameinput" style="height: 100%;"> </td>
+                    </tr>
+                </div>
+                <div class="form">
+                    <tr>
+                        <td style="font-weight: 600;" >Age</td>
+                        <td><input type="number" placeholder="Enter the Age" id="ageinput" style="height: 100%;"></td>
+                    </tr>
+                </div>
+                <div class="form">
+                    <tr>
+                        <td style="font-weight: 600;" > <label>Gender</label> </td>
+                        <div class="gender">
+                            <td> <input type="radio" value="male" name="gender">
+                                <lable>Male</lable>
+                                <input type="radio" value="female" name="gender">
+                                <lable>Female</lable>
+                            </td>
+                        </div>
+                    </tr>
+                </div>
+                <div class="form">
+                    <tr>
+                        <td style="font-weight: 600;" >Course</td>
+                        <td><select id="courseinput" style="height: 100%;width: 100%;"  >
+                                <option>
+                                    JavaScript
+                                </option>
+                                <option>
+                                    Pythnon
+                                </option>
+                                <option>
+                                    C
+                                </option>
+                                <option>
+                                    C++
+                                </option>
+                            </select></td>
+                    </tr>
+                </div>
+                <div class="form">
+                    <tr>
+                        <td style="font-weight: 600;" >E-mail</td>
+                        <td><input style="height: 100%" type="email" placeholder="Enter emailid" id="emailinput"> </td>
+                    </tr>
+                </div>
+                <tr>
+                    <td colspan="2" id="btn" style=" border: 2px solid black;" > Save</td>
+
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div>
+        <table border="1" class="studenttable" >
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Course</th>
+                    <th>Gender</th>
+                    <th>E-mail</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
